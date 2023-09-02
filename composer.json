@@ -1,0 +1,9 @@
+{
+  "name": "phpizi/template",
+  "description": "MVC framework for PHP based on ASP MVC features",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "phpizi/framework": "*"
+  }
+}
