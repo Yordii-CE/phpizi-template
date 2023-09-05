@@ -11,5 +11,10 @@
       "Framework\\": "vendor/phpizi/framework",
       "App\\": "app/"
     }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php vendor/phpizi/framework/post-install.php"
+    ]
   }
 }
