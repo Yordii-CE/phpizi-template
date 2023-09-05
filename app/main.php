@@ -1,3 +1,6 @@
 <?php
+
+use Framework\Utils\Url\DefaultUrl;
+
 session_start();
-DefaultUrl::$pattern = "{auth}/{index}";
+DefaultUrl::$pattern = "{Auth}/{index}";

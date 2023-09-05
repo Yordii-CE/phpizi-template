@@ -8,15 +8,15 @@
     <link rel="stylesheet" type="text/css" href="<?= $PUBLIC ?>/css/auth.css">
     <link rel="icon" href="<?= $PUBLIC ?>/img/icon.png" type="image/x-icon">
     <title>Login</title>
-    <link rel="icon" href="img/descarga.ico">
+
 </head>
 
 <body>
     <div class="center">
-        <h1>Login Sistema de Vacaciones</h1>
+        <h1>Login: <?= $title ?></h1>
         <form action="<?= TO($THIS, 'login') ?>" method="POST" class="login-email">
             <div class="txt_field">
-                <input type="text" id="usuario" name="usuario" class="form-control" required />
+                <input type="text" id="usuario" name="user" class="form-control" required />
                 <label>Usuario</label>
             </div>
 
@@ -33,8 +33,10 @@
             </div>
 
             ¿Eres nuevo en el sistema?
-
             <a href="<?= TO($THIS, 'register') ?>"> Crear cuenta</a>
+
+            Probar api
+            <a href="<?= TO('myapi', '') ?>"> Api</a>
         </form>
 
 
