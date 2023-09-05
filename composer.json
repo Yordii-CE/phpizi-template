@@ -5,5 +5,11 @@
   "minimum-stability": "dev",
   "require": {
     "phpizi/framework": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "vendor/phpizi/framework",
+      "App\\": "app/"
+    }
   }
 }
