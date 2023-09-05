@@ -14,7 +14,7 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "php vendor/phpizi/framework/post-install.php"
+      "php vendor/phpizi/framework/cli/post-install.php"
     ]
   }
 }
