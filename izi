@@ -1,0 +1,30 @@
+<?php
+// Ruta al archivo .bat
+$commands = ["controller", "api", "database", "middleware", "delete"];
+$command = $argv[1] ?? null;
+$param1 = $argv[2] ?? null;
+$param2 = $argv[3] ?? null;
+$param3 = $argv[4] ?? null;
+
+if ($command == null) die("Missing command: [".implode(', ', $commands)."]");
+if (!in_array($command, $commands)) die("Unknown command: $command");
+
+//$batPath = __DIR__ . "/framework/cli/$command.bat";
+$batPath = __DIR__ . "/vendor/phpizi/framework/cli/$command.bat";
+
+$params = "$param1 $param2 $param3";
+
+// Ejecutar el archivo .bat desde PHP
+exec("cmd /c \"$batPath\" $params", $output, $returnCode);
+
+// Verificar el resultado de la ejecución
+if ($returnCode === 0) {
+    // Print Output bat
+    if (!empty($output)) {
+        foreach ($output as $line) {
+            echo "$line\n";
+        }
+    }
+}else{    
+    echo "ERROR: BAT FILE NOT EXECUTED.";   
+}
