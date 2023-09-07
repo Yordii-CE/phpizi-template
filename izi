@@ -1,12 +1,12 @@
 <?php
 // Ruta al archivo .bat
-$commands = ["controller", "api", "database", "middleware", "delete"];
+$commands = ["controller", "api", "model", "view", "database", "middleware", "delete"];
 $command = $argv[1] ?? null;
 $param1 = $argv[2] ?? null;
 $param2 = $argv[3] ?? null;
 $param3 = $argv[4] ?? null;
 
-if ($command == null) die("Missing command: [".implode(', ', $commands)."]");
+if ($command == null) die("Missing command: [" . implode(', ', $commands) . "]");
 if (!in_array($command, $commands)) die("Unknown command: $command");
 
 //$batPath = __DIR__ . "/framework/cli/$command.bat";
@@ -25,6 +25,6 @@ if ($returnCode === 0) {
             echo "$line\n";
         }
     }
-}else{    
-    echo "ERROR: BAT FILE NOT EXECUTED.";   
+} else {
+    echo "ERROR: BAT FILE NOT EXECUTED.";
 }

@@ -6,6 +6,7 @@ use Framework\Definitions\Abstracts\Controller;
 use Framework\Definitions\Annotations\Request\Middlewares;
 use Framework\Request\Body;
 use App\Middlewares\Authentication;
+
 use App\Models\Auth as ModelAuth;
 
 class Auth extends Controller

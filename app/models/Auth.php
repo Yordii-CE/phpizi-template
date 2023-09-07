@@ -6,6 +6,6 @@ class Auth
 {
     function getTitle()
     {
-        return "Sistema de vacaciones";
+        return 'Solicitud de vacaciones';
     }
 }
