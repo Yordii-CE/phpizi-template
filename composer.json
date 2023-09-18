@@ -13,6 +13,7 @@
     }
   },
   "scripts": {
+    "serve": "php -S localhost:8000",
     "post-install-cmd": [
       "vendor/phpizi/framework/cli/post-install.bat"
     ]
