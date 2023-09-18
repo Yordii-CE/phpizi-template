@@ -1,1 +1,1 @@
-# phpizi-template
+# Project built in 🟣phpizi
