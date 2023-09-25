@@ -16,6 +16,7 @@
     "serve": "php -S localhost:8000",
     "post-install-cmd": [
       "vendor/phpizi/framework/cli/post-install.bat"
-    ]
+    ],
+    "start": "cd C:\\xampp && xampp_start apache && xampp_start mysql && start http://localhost/"
   }
 }
